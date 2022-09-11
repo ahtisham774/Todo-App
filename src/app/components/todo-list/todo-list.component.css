@@ -9,6 +9,7 @@
     flex-direction: column;
     row-gap: 10px;
     position: relative;
+    overflow: hidden;
  }
  h3{
     position: absolute;

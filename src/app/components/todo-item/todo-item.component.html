@@ -1,4 +1,4 @@
-<div class="container">
+<div [ngClass]="{'move': isMove}" class="container">
     <h4>{{todo.title}}</h4>
     <p>{{todo.description}}</p>
     <div class="back">

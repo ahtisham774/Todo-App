@@ -9,14 +9,21 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class TodoItemComponent implements OnInit {
  @Input() todo : Todo;
- @Output() handleDelete : EventEmitter<Todo> = new EventEmitter();   
+ @Output() handleDelete : EventEmitter<Todo> = new EventEmitter(); 
+ isMove:boolean;  
   constructor() {
+    this.isMove = false;
         this.todo = {id:'',title:'',description:''};
    }
 
   ngOnInit(): void {
   }
   todoDelete(todo:Todo){
-    this.handleDelete.emit(todo);
+    this.isMove = true;
+    console.log("delete");
+    setTimeout(() => {
+         this.handleDelete.emit(todo);
+    }, 1500);
+   
   }
 }

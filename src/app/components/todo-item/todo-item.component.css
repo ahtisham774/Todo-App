@@ -40,3 +40,10 @@ svg{
     margin-top: 5px;
 
 }
+.move{
+
+    transform: translateX(200%);
+    opacity: 0;
+    transition: transform 0.9s, opacity 0.5s;
+    
+}
