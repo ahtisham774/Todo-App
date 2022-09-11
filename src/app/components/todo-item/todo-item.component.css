@@ -1,0 +1,42 @@
+.container{
+    padding: 15px 20px;
+    box-shadow: inset 0 0 1px 0 #CBB26B;
+    border-radius:10px;
+    overflow: hidden;
+    position: relative;
+}
+h4{
+    margin-bottom: 8px;
+}
+p{
+    font-size: 12px;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:-100%;
+    left: 0;
+    transition: bottom 0.9s;
+    background: #cbb16bea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container:hover .back{
+    bottom:0;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+svg{
+    width: 20px;
+    height: auto;
+}
+.inner > span{
+    color:rgb(0, 0, 0);
+    margin-top: 5px;
+
+}

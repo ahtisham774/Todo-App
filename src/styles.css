@@ -1,0 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/6cc715122c2880c53facde0e44b3498c?family=Lettera+Text+Std);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgba(0, 0, 0, 0.932);
+    color:#CBB26B;
+    font-family: "Lettera Text Std", Arial, sans-serif;
+}

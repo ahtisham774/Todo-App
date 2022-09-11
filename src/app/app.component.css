@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer{
+    box-shadow: 0 0 2px #CBB26B;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+footer > p ,footer > p > span {
+    font-size: calc(.1vw + 8px);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+footer > p{
+    gap: 20px;
+}
+
+footer > p > span >a > svg{
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}

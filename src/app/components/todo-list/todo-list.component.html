@@ -1,0 +1,12 @@
+<div class="container" >
+    <div *ngIf="todo_list.length === 0; else elseBlock">
+        <h3>No Todo/s Yet</h3>
+    </div>
+    <ng-template #elseBlock>
+    
+    <div *ngFor="let todo of todo_list.slice().reverse()">
+        <app-todo-item [todo] = "todo" (handleDelete)="todoDelete($event)"></app-todo-item>
+    </div>
+    </ng-template>
+    
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Add Todo</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <fieldset>
+        <legend>Title</legend>
+        <input type="text" [(ngModel)]="title" class="form-control" name="title" ng-required="required">
+      </fieldset>
+      <fieldset>
+        <legend >Description</legend>
+        <textarea  [(ngModel)]="description" class="form-control" ng-required="required" name="description"></textarea>
+      </fieldset>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div>
+    <span [ngClass]="{'show':isShow}" class="alert">Todo created successfully</span>
+  </div>
+</div>
